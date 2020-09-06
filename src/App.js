@@ -40,6 +40,7 @@ const App = () => {
         <div>
             <NavBar isLoggedIn={isLoggedIn} />
             <div className="body">
+                <h1>Im in the SRC App.js file</h1>
                 <Switch>
                     <Route path="/signup" render={(props) => {
                         return (
