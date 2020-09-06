@@ -11,7 +11,7 @@ const SnakeList = (props) => {
             try {
                 const response = await fetch('/api');
                 const data = await response.json();
-                updateAllSnakes([...data]);
+                setSnakes([...data]);
             } catch (e) {
                 console.log(e)
             }
