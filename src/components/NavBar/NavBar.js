@@ -6,31 +6,42 @@ import "./NavBar.css"
 function NavBar(props) {
     let navBarItems = [
         <li key={1}>
-            <a href="#">About</a>
+            <a href="#">About</a> 
         </li>
     ];
     if (props.isLoggedIn) {
         navBarItems.push(
+            <>
+            <a>|</a>
             <li key={2}>
                 <a href="/logout">Log Out</a>
             </li>
+            </>
         );
     } else {
         navBarItems.push(
+            <>
+            <a>|</a>
             <li key={3}>
                 <a href="/signup">Register</a>
             </li>
+            </>
         );
+
         navBarItems.push(
+            <>
+            <a>|</a>
             <li key={4}>
-                <a href="/login">Log In</a>
+                <a href="/login">Sign In</a>
             </li>
+            </>
         );
     }
     return (
         <>
         <nav>
-            <ul className="NavBar">{navBarItems}</ul>
+            <ul className="NavBar">| {navBarItems} |
+            </ul>
         </nav>
         <h1>The Hissery</h1>
         </>
