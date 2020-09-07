@@ -10,76 +10,111 @@ import LogOutForm from "./components/LogOutForm/LogOut.js";
 import "./App.css";
 
 const App = () => {
-    const [state, setState] = useState({
-        email: "",
-        password: "",
-        isLoggedIn: false,
+  const [state, setState] = useState({
+    email: "",
+    password: "",
+    isLoggedIn: false,
+  });
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.token) {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, [isLoggedIn]);
+
+  const handleLogOut = () => {
+    setState({
+      email: "",
+      password: "",
+      isLoggedIn: false,
     });
+    localStorage.clear();
+  };
 
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const handleInput = (event) => {
+    setState({ ...state, [event.target.name]: event.target.value });
+  };
 
-    useEffect(() => {
-        if (localStorage.token) {
-            setIsLoggedIn(true);
-        } else {
-            setIsLoggedIn(false);
-        }
-    }, [isLoggedIn]);
+  const handleSignUp = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:3001/users/signup", {
+        email: state.email,
+        password: state.password,
+      });
+      console.log(response);
+      localStorage.token = response.data.token;
+      setIsLoggedIn(true);
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
-    const handleLogOut = () => { };
+  const handleLogIn = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:3001/users/login", {
+        email: state.email,
+        password: state.password,
+      });
+      localStorage.token = response.data.token;
+      setIsLoggedIn(true);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
-    const handleInput = (event) => {
-        setState({ ...state, [event.target.name]: event.target.value });
-    };
-
-    const handleSignUp = (event) => { };
-
-    const handleLogIn = (event) => { };
-
-    return (
-        <div>
-            <NavBar isLoggedIn={isLoggedIn} />
-            <div className="body">
-                <Switch>
-                    <Route path="/signup" render={(props) => {
-                        return (
-                            <SignUpForm isLoggedIn={isLoggedIn}
-                                handleInput={handleInput}
-                                handleSignUp={handleSignUp}
-                            />
-                        );
-                    }}
-                    />
-                    <Route
-                        path="/logout"
-                        render={(props) => {
-                            return (
-                                <LogOutForm isLoggedIn={isLoggedIn} handleLogOut={handleLogOut} />
-                            );
-                        }}
-                    />
-                    <Route
-                        path="/login"
-                        render={(props) => {
-                            return (
-                                <LogInForm
-                                    isLoggedIn={isLoggedIn}
-                                    handleInput={handleInput}
-                                    handleLogIn={handleLogIn}
-                                />
-                            );
-                        }}
-                    />
-                    <Route
-                        path="/"
-                        render={() => {
-                            return <SnakeList isLoggedIn={isLoggedIn} />;
-                        }}
-                    />
-                </Switch>
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <NavBar isLoggedIn={isLoggedIn} />
+      <div className="body">
+        <Switch>
+          <Route
+            path="/signup"
+            render={(props) => {
+              return (
+                <SignUpForm
+                  isLoggedIn={isLoggedIn}
+                  handleInput={handleInput}
+                  handleSignUp={handleSignUp}
+                />
+              );
+            }}
+          />
+          <Route
+            path="/logout"
+            render={(props) => {
+              return (
+                <LogOutForm isLoggedIn={isLoggedIn} handleLogOut={handleLogOut} />
+              );
+            }}
+          />
+          <Route
+            path="/login"
+            render={(props) => {
+              return (
+                <LogInForm
+                  isLoggedIn={isLoggedIn}
+                  handleInput={handleInput}
+                  handleLogIn={handleLogIn}
+                />
+              );
+            }}
+          />
+          <Route
+            path="/"
+            render={() => {
+              return <SnakeList isLoggedIn={isLoggedIn} />;
+            }}
+          />
+        </Switch>
+      </div>
+    </div>
+  );
 };
 
 export default App;

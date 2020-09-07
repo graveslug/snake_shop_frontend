@@ -6,7 +6,7 @@ import "./NavBar.css"
 function NavBar(props) {
     let navBarItems = [
         <li key={1}>
-            <a href="#">About</a> 
+            <a href="#">About</a>
         </li>
     ];
     if (props.isLoggedIn) {
