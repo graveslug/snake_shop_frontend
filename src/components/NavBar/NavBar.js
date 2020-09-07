@@ -6,7 +6,7 @@ import "./NavBar.css"
 function NavBar(props) {
     let navBarItems = [
         <li key={1}>
-            <a href="#">About</a> 
+            <a className="menu" href="#">About</a> 
         </li>
     ];
     if (props.isLoggedIn) {
@@ -14,7 +14,7 @@ function NavBar(props) {
             <>
             <a>|</a>
             <li key={2}>
-                <a href="/logout">Log Out</a>
+                <a className="menu" href="/logout">Log Out</a>
             </li>
             </>
         );
@@ -23,7 +23,7 @@ function NavBar(props) {
             <>
             <a>|</a>
             <li key={3}>
-                <a href="/signup">Register</a>
+                <a className="menu" href="/signup">Register</a>
             </li>
             </>
         );
@@ -32,7 +32,7 @@ function NavBar(props) {
             <>
             <a>|</a>
             <li key={4}>
-                <a href="/login">Sign In</a>
+                <a className="menu" href="/login">Sign In</a>
             </li>
             </>
         );
@@ -40,7 +40,7 @@ function NavBar(props) {
     return (
         <>
         <nav>
-            <ul className="NavBar">| {navBarItems} |
+            <ul className="NavBar"> {navBarItems} 
             </ul>
         </nav>
         <h1>The Hissery</h1>

@@ -6,8 +6,13 @@
     justify-content: space-evenly;
     text-shadow: 1px 1px 1px black;
     color: white;
+    margin: 0px;
 }
 
-li{
+.menu{
     color: white;
+}
+
+.NavBar a:hover{
+    color: darkgreen;
 }
