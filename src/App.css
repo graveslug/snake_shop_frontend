@@ -1,12 +1,2 @@
 /* Clean CSS Slate */
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-body{
-    background-image: url('https://img5.goodfon.com/wallpaper/nbig/8/b3/zmeia-noch-zhioltaia-zmeia-chiornyi-fon-visit.jpg');
-    background-size: cover;
-}
-
-h1{
-    color: white;
-    font-family: 'Righteous', cursive;
-}
+/*Current state, DO NOT ADD CSS*/

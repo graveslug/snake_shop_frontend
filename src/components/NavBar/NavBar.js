@@ -44,6 +44,18 @@ function NavBar(props) {
             </ul>
         </nav>
         <h1>The Hissery</h1>
+{/* Background work below */}
+        {/* <ul class="cb-slideshow">
+	<li>
+		<span>Image 01</span>
+		<div>
+			<h3>Species info here??</h3>
+		</div>
+	</li>
+	<li></li>
+	<li></li>
+</ul> */}
+
         </>
     );
 }
