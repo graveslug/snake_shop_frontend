@@ -8,7 +8,7 @@ function SignUpForm(props) {
             <h2>Sign Up</h2>
             <form>
                 <div>
-                    <label htmlFor="email"></label>
+                    <label htmlFor="email">Email</label>
                     <input type="text" name="email" onChange={props.handleInput}/>
                 </div>
                 <div>
