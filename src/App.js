@@ -8,6 +8,7 @@ import SignUpForm from "./components/SignUpForm/SignUpForm.js";
 import LogInForm from "./components/LogInForm/LogInForm.js";
 import LogOutForm from "./components/LogOutForm/LogOut.js";
 import "./App.css";
+import About from './components/About/About.js';
 
 
 const App = () => {
@@ -104,6 +105,12 @@ const App = () => {
                   handleLogIn={handleLogIn}
                 />
               );
+            }}
+          />
+          <Route
+            path="/about"
+            render={(props)=>{
+              return <About/>
             }}
           />
           <Route
