@@ -17,7 +17,7 @@ function About (props){
                         Here on Hissery, we provide high quality snakes where you can breed particular snakes to your liking. Through our reservation system you can reserve the snake(s). We have a wide variety of snakes to choose from. 
                     </p>
                 </div>
-                <h2>Contact Us </h2>
+                <h2 className="contactTitle">Contact Us </h2>
                 <div className="allContacts">
                     <div className="section">
                     <h3  className="contact">Philip Gray</h3>
