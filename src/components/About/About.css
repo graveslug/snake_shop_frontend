@@ -1,0 +1,39 @@
+/* .background{
+    background-image: src('https://media.istockphoto.com/photos/chondropython-picture-id1135584427?k=6&m=1135584427&s=612x612&w=0&h=xvSOT_2ydmkOZBMbJt3cF_8KKhtIbvnXYBPwgq7GE0I=');
+    background-size: cover;
+    z-index: 0;
+} */
+.title{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+p{
+    color: white;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+h2{
+    color: white;
+    font-size: 45px;
+}
+h3{
+    color: white;
+}
+.allContacts{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact{
+    font-size: 35px;
+    text-align: center;
+}
+
+.section{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 75px;
+    border-radius: 5px;
+}
