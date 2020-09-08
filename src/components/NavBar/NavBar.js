@@ -43,7 +43,7 @@ function NavBar(props) {
             <ul className="NavBar"> {navBarItems} 
             </ul>
         </nav>
-        <h1>The Hissery</h1>
+
 {/* Background work below */}
         {/* <ul class="cb-slideshow">
 	<li>
