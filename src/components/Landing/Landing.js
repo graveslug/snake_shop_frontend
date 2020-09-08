@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Landing(props) {
-    render() {
+    render(); {
         <div>
             <h4>
                 <span>Landing Page</span>
@@ -12,8 +12,8 @@ function Landing(props) {
                 To='/register'
                 >
                 Register
-            </link>
-            //file path for login
+            </Link>
+            {/* file path for login */}
             <link
                 To='/login'
                 >
