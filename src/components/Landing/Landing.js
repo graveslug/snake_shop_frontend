@@ -13,7 +13,7 @@ function Landing(props) {
                 >
                 Register
             </Link>
-            {/* file path for login */}
+            //file path for login
             <link
                 To='/login'
                 >
