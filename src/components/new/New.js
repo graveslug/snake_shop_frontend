@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import axios from 'axios';
 
-import NavBar from './components/NavBar/NavBar.js';
-import SnakeList from './components/SnakeList/SnakeList.js';
-import SignUpForm from "./components/SignUpForm/SignUpForm.js";
-import LogInForm from "./components/LogInForm/LogInForm.js";
-import LogOutForm from "./components/LogOutForm/LogOut.js";
+import NavBar from '../NavBar/NavBar.js';
+import SnakeList from '../SnakeList/SnakeList.js';
+import SignUpForm from "../SignUpForm/SignUpForm.js";
+import LogInForm from "../LogInForm/LogInForm.js";
+import LogOutForm from "../LogOutForm/LogOut.js";
 
 const New = () => {
     const [state, setState] = useState({
