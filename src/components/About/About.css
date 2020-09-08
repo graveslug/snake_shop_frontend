@@ -30,7 +30,11 @@ h3{
     font-size: 35px;
     text-align: center;
 }
-
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
 .section{
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;

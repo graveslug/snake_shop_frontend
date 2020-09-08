@@ -21,15 +21,15 @@ function About (props){
                 <div className="allContacts">
                     <div className="section">
                     <h3  className="contact">Philip Gray</h3>
-                    <p>Email: philip.gray@email.com</p>
+                    <a className="link" href="mailto:philip.gray@email.com">Email Me</a>
                     </div><br/>
                     <div className="section">
                     <h3  className="contact">Isaac Dennis</h3>
-                    <p>Email: isaac.dennis@email.com</p>
+                    <a className="link" href="mailto:isaac.dennis@email.com">Email Me</a>
                     </div><br/>
                     <div className="section">
                     <h3  className="contact">Lillian Parker</h3>
-                    <p>Email: lillian.parker@email.com</p>
+                    <a className="link" href="mailto:lillian.parker@email.com">Email Me</a>
                     </div>
                 </div>
             </div>
