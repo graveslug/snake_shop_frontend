@@ -3,16 +3,17 @@
     background-size: cover;
     z-index: 0;
 } */
-.title{
+.aboutTitle{
     font-size: 30px;
     width: 250px;
     margin-right: auto;
     margin-left: auto;
     background-color: rgba(0, 0, 0, 0.6);
     margin: 10 px;
-    padding: 10px 0px 10px 0px
+    padding: 10px 0px 10px 0px;
+    text-align: center;
 }
-p{
+.paragraphs{
     color: white;
     font-size: 25px;
     background-color: rgba(0, 0, 0, 0.6);

@@ -42,7 +42,8 @@ const SnakeList = (props) => {
                     <div className="card"><img className="card__img" src="https://i.pinimg.com/originals/1a/57/88/1a57889947889a50f7652a8982bec5cc.jpg" alt="Desert" />
                         <div className="card__content">
                             <h1 className="card__header">Pair of California Garter Snakes</h1>
-                            <p className="card__text">Proven pair of California Red-Sided Garter Snakes. Great indivudals, have given me several clutches perfect clutches. Female is a bit snappy but male is very personable.</p><button className="card__btn">More Information<span>&rarr;</span></button>
+                            <p className="card__text">Proven pair of California Red-Sided Garter Snakes. Great indivudals, have given me several clutches perfect clutches. Female is a bit snappy but male is very personable.</p>
+                            <button className="card__btn">More Information<span>&rarr;</span></button>
                         </div>
                     </div>
                 </div>

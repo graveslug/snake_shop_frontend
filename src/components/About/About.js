@@ -6,14 +6,14 @@ function About (props){
         return(
             <div className="background">
                 <div>
-                    <h2 className="title">About Us</h2>
-                    <p>
+                    <h2 className="aboutTitle">About Us</h2>
+                    <p className="paragraphs">
                         Welcome to Hissery. We are a group of classmates deciding to give you the best experience with look and reserving snakes out there. Philip Gray, Lillian Parker, and Isaac Dennis hope you enjoy this webpage and get a snake of your dreams.
                     </p>
                 </div>
                 <div>
-                    <h2 className="title">About Website</h2>
-                    <p>
+                    <h2 className="aboutTitle">About Website</h2>
+                    <p className="paragraphs">
                         Here on Hissery, we provide high quality snakes where you can breed particular snakes to your liking. Through our reservation system you can reserve the snake(s). We have a wide variety of snakes to choose from. 
                     </p>
                 </div>
