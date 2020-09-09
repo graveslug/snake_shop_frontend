@@ -114,3 +114,15 @@ body {
 .card__btn:hover span, .card__btn:active span {
   margin-left: 1.5rem;
 }
+
+.myButton {
+	border-radius:1px;
+	cursor:pointer;
+	color:#666666;
+	padding:5px 0px;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
