@@ -9,6 +9,7 @@ import LogInForm from "./components/LogInForm/LogInForm.js";
 import LogOutForm from "./components/LogOutForm/LogOut.js";
 import SnakeSubmit from "./components/SnakeSubmit/SnakeSubmit"
 import "./App.css";
+import About from './components/About/About.js';
 
 
 const App = () => {
@@ -110,15 +111,28 @@ const App = () => {
           <Route
             path="/snakesubmit"
             render={(props) => {
-              return <SnakeSubmit
-
-              />;
+              return (
+                 <SnakeSubmit
+                 />;
+                )
+              }}
+            />
+          <Route
+            path="/about"
+            render={(props)=>{
+              return ( 
+                <About
+               />
+              )
             }}
           />
           <Route
             path="/"
             render={() => {
-              return <SnakeList isLoggedIn={isLoggedIn} />;
+              return (
+                <SnakeList isLoggedIn={isLoggedIn} 
+               />;
+              )
             }}
           />
         </Switch>
