@@ -114,14 +114,14 @@ const App = () => {
             render={(props) => {
               return (
                  <SnakeSubmit
-                 />;
+                 />
                 )
               }}
             />
           <Route
             path="/about"
             render={(props)=>{
-              return ( 
+              return (
                 <About
                />
               )
@@ -131,8 +131,8 @@ const App = () => {
             path="/"
             render={() => {
               return (
-                <SnakeList isLoggedIn={isLoggedIn} 
-               />;
+                <SnakeList isLoggedIn={isLoggedIn}
+               />
               )
             }}
           />
