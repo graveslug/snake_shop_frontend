@@ -4,8 +4,8 @@ import "./SignUpForm.css";
 
 function SignUpForm(props) {
     return(
-        <div>
-            <h2>Sign Up</h2>
+        <div className="signUp">
+            <h2 className="title">Sign Up</h2>
             <form>
                 <div>
                     <label htmlFor="email">Email</label>
@@ -14,7 +14,7 @@ function SignUpForm(props) {
                 <div>
                     <label htmlFor="password">Password</label>
                     <input type="text" name="password" onChange={props.handleInput}/>
-                </div>
+                </div><br/>
                 <input value="Submit" type="submit" onClick={props.handleSignUp}/>
             </form>
         </div>

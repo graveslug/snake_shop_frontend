@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import NavBar from './components/NavBar/NavBar.js';
 import SnakeList from './components/SnakeList/SnakeList.js';
+import SnakeShow from './components/SnakeShow/SnakeShow.js';
 import SignUpForm from "./components/SignUpForm/SignUpForm.js";
 import LogInForm from "./components/LogInForm/LogInForm.js";
 import LogOutForm from "./components/LogOutForm/LogOut.js";
@@ -133,6 +134,12 @@ const App = () => {
                 <SnakeList isLoggedIn={isLoggedIn} 
                />;
               )
+            }}
+          />
+          <Route
+            path="/snakelist/show"
+            render={() => {
+              return <SnakeShow/>;
             }}
           />
         </Switch>
