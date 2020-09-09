@@ -7,6 +7,7 @@ import SnakeList from './components/SnakeList/SnakeList.js';
 import SignUpForm from "./components/SignUpForm/SignUpForm.js";
 import LogInForm from "./components/LogInForm/LogInForm.js";
 import LogOutForm from "./components/LogOutForm/LogOut.js";
+import SnakeSubmit from "./components/SnakeSubmit/SnakeSubmit"
 import "./App.css";
 
 
@@ -104,6 +105,14 @@ const App = () => {
                   handleLogIn={handleLogIn}
                 />
               );
+            }}
+          />
+          <Route
+            path="/snakesubmit"
+            render={(props) => {
+              return <SnakeSubmit
+
+              />;
             }}
           />
           <Route
