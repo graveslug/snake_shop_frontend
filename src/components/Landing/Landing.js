@@ -1,25 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import "./Landing.css"
 
 function Landing(props) {
-    render(); {
-        <div>
-            <h4>
-                <span>Landing Page</span>
-            </h4>
-            //file path for register
-            <Link
-                To='/register'
-                >
-                Register
-            </Link>
-            //file path for login
-            <link
-                To='/login'
-                >
-                Log In
-                </link>
+    return ( 
+        <div className="Landing">
+            <div>
+                <img className="landingDeco" src="https://i.imgur.com/PW5sVdO.png"/>
+            </div>
         </div>
-    }
+    )
 }
 export default Landing

@@ -1,23 +1,37 @@
-/* .background{
-    background-image: src('https://media.istockphoto.com/photos/chondropython-picture-id1135584427?k=6&m=1135584427&s=612x612&w=0&h=xvSOT_2ydmkOZBMbJt3cF_8KKhtIbvnXYBPwgq7GE0I=');
-    background-size: cover;
-    z-index: 0;
-} */
-.title{
+
+.aboutImg{
+    width: 70%;
+    padding: 75px 0px 0px 0px;
+}
+.aboutTitle{
     font-size: 30px;
     width: 250px;
     margin-right: auto;
     margin-left: auto;
     background-color: rgba(0, 0, 0, 0.6);
     margin: 10 px;
-    padding: 10px 0px 10px 0px
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-p{
+.paragraph1{
     color: white;
     font-size: 25px;
     background-color: rgba(0, 0, 0, 0.6);
     margin: 10px;
-    padding: 10px
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.paragraph2{
+    color: white;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
 }
 h2{
     color: white;
@@ -34,17 +48,16 @@ h3{
     padding: 10px 0px 10px 0px;
     margin-right: auto;
     margin-left: auto;
-
+    text-align: center;
 }
 .allContacts{
-    position: absolute;
-    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-items: flex-end;
 }
 .contact{
-    font-size: 35px;
+    font-size: 15px;
     text-align: center;
 }
 .link{

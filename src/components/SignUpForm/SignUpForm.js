@@ -1,10 +1,9 @@
 import React from 'react';
-
 import "./SignUpForm.css";
 
 function SignUpForm(props) {
     return (
-        <div>
+        <div className="SignUp">
             <br />
             <br />
             <div className="signUp">

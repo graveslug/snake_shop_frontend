@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom"
 import axios from 'axios'
+import './SnakeSubmit.css';
 
 
 function SnakeSubmit(props) {
@@ -38,75 +39,80 @@ function SnakeSubmit(props) {
           description: snakeState.description
         });
         console.log(response);
-        history.push("/")
+        history.push("/snakelist")
       } catch (err) {
         console.log(err);
       }
     };
     return(
-        <div>
+        <div className="SnakeSubmit">
             <h2>Submit Snake</h2>
-            <form>
+            <form className="submitContainer">
+                <div className="snakeSubmitForm1">
                 <div>
                     <label htmlFor="image">
                         Image:
                     </label>
                     <input type="text" name="image" onChange={handleSnakeInput}/>
-                </div>
+                </div><br/>
                 <div>
                     <label htmlFor="species">
                         Species:
                     </label>
                     <input type="text" name="species" onChange={handleSnakeInput}/>
-                </div>
+                </div><br/>
+                <div>
+                    <label htmlFor="morph">
+                        Morph:
+                    </label>
+                    <input type="text" name="morph" onChange={handleSnakeInput}/>
+                </div><br/>
+                <div>
+                    <label htmlFor="sex">
+                        Sex:
+                    </label>
+                    <input type="text" name="sex" onChange={handleSnakeInput}/>
+                </div><br/>
                 <div>
                     <label htmlFor="venomous">
                         Venomous:
                     </label>
                     <input type="checkbox" name="venomous" onChange={handleSnakeInput}/>
                 </div>
-                <div>
-                    <label htmlFor="morph">
-                        Morph:
-                    </label>
-                    <input type="text" name="morph" onChange={handleSnakeInput}/>
-                </div>
-                <div>
-                    <label htmlFor="sex">
-                        Sex:
-                    </label>
-                    <input type="text" name="sex" onChange={handleSnakeInput}/>
-                </div>
+                </div><br/>
+                <div className="snakeSubmitForm2">
                 <div>
                     <label htmlFor="age">
                         Age:
                     </label>
                     <input type="text" name="age" onChange={handleSnakeInput}/>
-                </div>
-                <div>
-                    <label htmlFor="prooven">
-                        Prooven:
-                    </label>
-                    <input type="checkbox" name="prooven" onChange={handleSnakeInput}/>
-                </div>
+                </div><br/>
                 <div>
                     <label htmlFor="origin">
                         Origin:
                     </label>
                     <input type="text" name="origin" onChange={handleSnakeInput}/>
-                </div>
+                </div><br/>
                 <div>
                     <label htmlFor="quote">
                         Quote:
                     </label>
                     <input type="text" name="quote" onChange={handleSnakeInput}/>
-                </div>
+                </div><br/>
                 <div>
                     <label htmlFor="description">
                         Description:
                     </label>
                     <input type="text" name="description" onChange={handleSnakeInput}/>
+                </div><br/>
+                <div>
+                    <label htmlFor="proven">
+                        Proven:
+                    </label>
+                    <input type="checkbox" name="proven" onChange={handleSnakeInput}/>
                 </div>
+                </div>
+                <br/>
                 <input value="Submit" type="submit" onClick={handleSnakeSubmit}/>
             </form>
         </div>

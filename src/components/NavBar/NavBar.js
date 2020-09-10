@@ -5,15 +5,25 @@ import "./NavBar.css"
 
 function NavBar(props) {
     let navBarItems = [
+        <>
         <li key={1}>
+        <a className="menu" href="/landing">Home</a> 
+        </li>
+        <a>|</a>
+        <li key={2}>
             <a className="menu" href="/about">About</a> 
         </li>
+        <a>|</a>
+        <li key={3}>
+            <a className="menu" href="/snakelist">Available</a> 
+        </li>
+        </>
     ];
     if (props.isLoggedIn) {
         navBarItems.push(
             <>
             <a>|</a>
-            <li key={2}>
+            <li key={4}>
                 <a className="menu" href="/logout">Log Out</a>
             </li>
             </>
@@ -22,23 +32,22 @@ function NavBar(props) {
         navBarItems.push(
             <>
             <a>|</a>
-            <li key={3}>
+            <li key={5}>
                 <a className="menu" href="/signup">Register</a>
             </li>
             </>
         );
-
         navBarItems.push(
             <>
             <a>|</a>
-            <li key={4}>
+            <li key={6}>
                 <a className="menu" href="/login">Sign In</a>
             </li>
             </>
         );
     }
     return (
-        <>
+        <div className="Nav">
         <nav>
             <ul className="NavBar"> {navBarItems} 
             </ul>
@@ -56,7 +65,7 @@ function NavBar(props) {
 	<li></li>
 </ul> */}
 
-        </>
+        </div>
     );
 }
 
