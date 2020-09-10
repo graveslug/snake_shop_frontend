@@ -44,9 +44,9 @@ function SnakeSubmit(props) {
       }
     };
     return(
-        <div>
+        <div className="SnakeSubmit">
             <h2>Submit Snake</h2>
-            <form>
+            <form className="snakeSubmit">
                 <div>
                     <label htmlFor="image">
                         Image:
@@ -84,10 +84,10 @@ function SnakeSubmit(props) {
                     <input type="text" name="age" onChange={handleSnakeInput}/>
                 </div>
                 <div>
-                    <label htmlFor="prooven">
-                        Prooven:
+                    <label htmlFor="proven">
+                        Proven:
                     </label>
-                    <input type="checkbox" name="prooven" onChange={handleSnakeInput}/>
+                    <input type="checkbox" name="proven" onChange={handleSnakeInput}/>
                 </div>
                 <div>
                     <label htmlFor="origin">
@@ -106,7 +106,7 @@ function SnakeSubmit(props) {
                         Description:
                     </label>
                     <input type="text" name="description" onChange={handleSnakeInput}/>
-                </div>
+                </div><br/>
                 <input value="Submit" type="submit" onClick={handleSnakeSubmit}/>
             </form>
         </div>

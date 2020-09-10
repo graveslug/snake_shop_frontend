@@ -27,7 +27,7 @@ const SnakeList = (props) => {
         );
     });
     return (
-        <div>
+        <div className="SnakeList">
             <a href="/snakesubmit" className="myButton"><img className="addSnake" src="https://i.imgur.com/jFlads4.png"/></a>
             <div className="grid">
                 <div className="grid__item">

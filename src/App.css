@@ -1,2 +1,6 @@
 /* Clean CSS Slate */
 /*Current state, DO NOT ADD CSS*/
+body{
+    background-image: url('https://i.pinimg.com/originals/71/ff/89/71ff89da89f9d119e1e50547b48ccf13.jpg');
+    background-size: cover;
+}

@@ -11,6 +11,7 @@ import LogOutForm from "./components/LogOutForm/LogOut.js";
 import SnakeSubmit from "./components/SnakeSubmit/SnakeSubmit"
 import "./App.css";
 import About from './components/About/About.js';
+import Landing from './components/Landing/Landing.js';
 
 
 const App = () => {
@@ -74,7 +75,7 @@ const App = () => {
 
   return (
     <div>
-      <NavBar isLoggedIn={isLoggedIn} />
+      <NavBar isLoggedIn={isLoggedIn}/>
       <div className="body">
         <Switch>
           <Route

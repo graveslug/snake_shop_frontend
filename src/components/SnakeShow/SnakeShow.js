@@ -18,7 +18,9 @@ function SnakeShow(props) {
         //     <h5>{quote}</h5>
         //     <p>Description: {description}</p>
         //     </div>
+        <div className="SnakeShow">
         <h1>Hi this is the show page</h1>
+        </div>
     );
 }
 
