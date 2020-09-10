@@ -1,4 +1,4 @@
-import React, { useState, useEffect, } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from "react-router-dom"
 import axios from 'axios'
 
@@ -25,7 +25,7 @@ function SnakeSubmit(props) {
     const handleSnakeSubmit = async (event) => {
       event.preventDefault();
       try {
-        const response = await axios.post("http://localhost:3001/snakes", {
+        const response = await axios.post("https://hissery-backend.herokuapp.com/snakes", {
           image: snakeState.image,
           species: snakeState.species,
           venomous: snakeState.venomous,
