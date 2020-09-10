@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
-
-
+import "./LogInForm.css"
 
 function LogInForm(props) {
     return(
-        <div>
+        <div className="LogIn">
             <br/>
             <br/>
         <div className="signUp">

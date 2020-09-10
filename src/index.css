@@ -1,13 +1,35 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.About{
+  background-image: src('https://i.pinimg.com/originals/71/ff/89/71ff89da89f9d119e1e50547b48ccf13.jpg');
+  background-size: cover;
+}
+.Landing{
+  background-image: src('https://img5.goodfon.com/wallpaper/nbig/8/b3/zmeia-noch-zhioltaia-zmeia-chiornyi-fon-visit.jpg')
+}
+.LogIn{
+  background-image: src('https://wallpaperboat.com/wp-content/uploads/2020/06/13/45800/snake-07.jpg')
+}
+.SignUp{
+  background-image: src('https://wallpaperboat.com/wp-content/uploads/2020/06/13/45800/snake-07.jpg')
+}
+.SnakeList{
+  background-image: src('https://images.fineartamerica.com/images-medium-large-5/snake-track-on-a-sand-dune-science-photo-library.jpg')
+}
+.SnakeShow{
+  background-image: src('')
+}
+.SnakeSubmit{
+  background-image: src('')
+} 
+.SnakeList{
+  background-image: src('')
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace; */
+.SnakeShow{
+  background-image: src('')
+  }
+
+.SnakeSubmit{
+  background-image: src('')
+} 
+
 
