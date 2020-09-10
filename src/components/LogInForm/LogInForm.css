@@ -1,0 +1,31 @@
+
+.signUp{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 10px;
+    padding: 10px 30px 30px 30px;
+}
+.title{
+    font-size: 40px;
+    text-align: center;
+}
+form{
+    font-size: 30px;
+}
+input{
+    display: absolute;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+input:active, input:hover{
+    background-color: black;
+    color: white;
+  }
