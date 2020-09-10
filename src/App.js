@@ -47,7 +47,7 @@ const App = () => {
   const handleSignUp = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/users/signup", {
+      const response = await axios.post("https://hissery-backend.herokuapp.com/users/signup", {
         email: state.email,
         password: state.password,
       });
@@ -62,7 +62,7 @@ const App = () => {
   const handleLogIn = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/users/login", {
+      const response = await axios.post("https://hissery-backend.herokuapp.com/users/login", {
         email: state.email,
         password: state.password,
       });
@@ -140,15 +140,12 @@ const App = () => {
             }}
           />
           <Route
-            path="/show"
+            path="/landing"
             render={() => {
-              return <SnakeShow/>;
-            }}
-          />
-          <Route
-            path="/Landing"
-            render={() => {
-              return <Landing/>;
+              return (
+                <Landing
+               />
+              )
             }}
           />
         </Switch>

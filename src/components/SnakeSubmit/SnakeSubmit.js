@@ -26,7 +26,7 @@ function SnakeSubmit(props) {
     const handleSnakeSubmit = async (event) => {
       event.preventDefault();
       try {
-        const response = await axios.post("http://localhost:3001/snakelist", {
+        const response = await axios.post("https://hissery-backend.herokuapp.com/snakes", {
           image: snakeState.image,
           species: snakeState.species,
           venomous: snakeState.venomous,
