@@ -10,7 +10,7 @@ const SnakeList = (props) => {
     useEffect(() => {
         (async () => {
             try {
-                const response = await fetch('/api');
+                const response = await fetch('https://hissery-backend.herokuapp.com/snakes');
                 const data = await response.json();
                 setSnakes([...data]);
             } catch (e) {
