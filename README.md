@@ -4,18 +4,18 @@ Isaac
 Lillian
 
 ### Dependicies 
-Bcyrpt 
-Mongoose
-axios
-bootstrap
-express
-jquery
-jwt-decode
-popper.js
-react
-react-dom
-react-router-dom
-react-scripts
+Bcyrpt - it hashes our passwords so no one can see the plain text of a users password. 
+Mongoose - allows us to connect to the mongoDatabase where we are pulling(fetching or data)
+axios - fecthes data from the backend where we are calling our models for our website.
+bootstrap - CSS framework were we are styling our website. 
+express - allows us to do certain things that may take more time if just using Node.js 
+jquery - allows DOM manipulation of things like event handling easier. 
+jwt-decode - helps decode JWT tokens
+popper.js - allows us to position an element near a given reference element. 
+react - allows us to make changes to a single page application to go to different locations without actually touching the URL. 
+react-dom - package that provides DOM methods. 
+react-router-dom - used for routing purposes 
+react-scripts - a set of scripts from create-react-app where we can start projects without configuring the project by ourselves. 
 
 ### Techonolgies 
 The different technologies used inside of this code were NODE.js, React, Express.js, and Mongooose. We also used authorization, models, CSS framework in React Bootstrap, and React Router. And to deploy this webiste we are using Heroku. 
@@ -26,10 +26,8 @@ We started with creating a file setup with our public and src directories. Insid
 
 
 ### Unsolved Problems
+We don't have a landing page setup for our website where a client can login or signup 
 
-Connecting front end with our mongoDb. We can't input information into the snakes, which is also causing else problems where we can call information on the backside. 
-
-We don't have a landing page setup or least we don't know how to implement that yet. 
-
+We also weren't able to create a login were admin had certain access to the website and users had their own view of the website. 
 
 ### Note to Self 
