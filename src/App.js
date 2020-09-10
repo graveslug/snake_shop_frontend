@@ -73,6 +73,8 @@ const App = () => {
     }
   };
 
+
+
   return (
     <div>
       <NavBar isLoggedIn={isLoggedIn}/>
@@ -129,18 +131,24 @@ const App = () => {
             }}
           />
           <Route
-            path="/"
+            path="/snakelist"
             render={() => {
               return (
-                <SnakeList isLoggedIn={isLoggedIn}
+                <SnakeList
                />
               )
             }}
           />
           <Route
-            path="/snakelist/show"
+            path="/show"
             render={() => {
               return <SnakeShow/>;
+            }}
+          />
+          <Route
+            path="/Landing"
+            render={() => {
+              return <Landing/>;
             }}
           />
         </Switch>

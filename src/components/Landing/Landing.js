@@ -1,14 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import NavBar from '../NavBar/NavBar';
-import { render } from '@testing-library/react';
-
-
+import "./Landing.css"
 
 function Landing(props) {
     return ( 
         <div className="Landing">
-            <NavBar></NavBar>
+            <div>
+                <img className="landingDeco" src="https://i.imgur.com/PW5sVdO.png"/>
+            </div>
         </div>
     )
 }
